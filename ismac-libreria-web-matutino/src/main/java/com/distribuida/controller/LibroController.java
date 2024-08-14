@@ -1,8 +1,8 @@
 package com.distribuida.controller;
-
+ 
 import java.util.Date;
 import java.util.List;
-
+ 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.lang.Nullable;
@@ -12,12 +12,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-
+ 
 import com.distribuida.dao.AutorDAO;
 import com.distribuida.dao.CategoriaDAO;
 import com.distribuida.dao.LibroDAO;
 import com.distribuida.entities.Libro;
-
+ 
 @Controller
 @RequestMapping("/libros")
 public class LibroController {
@@ -105,7 +105,7 @@ public class LibroController {
 	@GetMapping ("/del")
 	public String del(@RequestParam("idLibro") @Nullable Integer idLibro) {
 		 libroDAO.del(idLibro);
-		return "redirect:/libros/listar-libros";
+		return "redirect:/libros/libros-listar";
 	}
-
+ 
 }
