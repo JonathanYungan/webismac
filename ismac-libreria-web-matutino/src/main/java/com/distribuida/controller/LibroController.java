@@ -43,7 +43,7 @@ public class LibroController {
 	
 	@GetMapping("/findOne")
 	private String findOne(@RequestParam ("idLibro") @Nullable Integer idLibro
-			              ,@RequestParam ("option") @Nullable Integer option
+			              ,@RequestParam ("opcion") @Nullable Integer opcion
 			              ,ModelMap modelMap
 			
 			
@@ -57,7 +57,7 @@ public class LibroController {
 		//modelMap.addAttribute("autores", autorDAO.findAll());
 		modelMap.addAttribute("categorias", categoriaDAO.findAll());
 		
-			if(option == 1) return "add-libros";
+			if(opcion == 1) return "add-libros";
 			else return "del-libros";
 	}
 	
