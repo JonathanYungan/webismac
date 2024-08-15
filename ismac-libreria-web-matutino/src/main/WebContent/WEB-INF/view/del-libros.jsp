@@ -7,21 +7,22 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1> Borrar tabla </h1>
- 
+
+
+<h1> Libros </h1>
+
          <form action="del" method="get">
          
                <input type="hidden" id="idLibro" name="idLibro" value="${libro.idLibro}" />
                
-               <strong>Eliminar
-               </strong>
+               <strong>�Desea Eliminar el dato?</strong>
                <br/>
                <button type="submit">Guardar</button>
                
-               <button onclick="window.location.href='/ismac-libreria-web-matutino/libro/findAll';return false ;">
+               <button onclick="window.location.href='/ismac-libreria-web-matutino/libros/findAll';return false ;">
                Cancelar
                </button>
          </form>
-        
+
 </body>
-</html>>
+</html>
