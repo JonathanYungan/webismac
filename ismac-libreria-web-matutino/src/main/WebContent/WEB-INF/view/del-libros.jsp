@@ -72,7 +72,7 @@
     <input type="hidden" id="idLibro" name="idLibro" value="${libro.idLibro}" />
 
     <div class="book-cover">
-        <img alt="Portada del libro" width="100" height="100" 
+        <img alt="Portada del libro" width="250" height="250" 
              src="${pageContext.request.contextPath}/resources/img/${libro.portada}" 
              onerror="this.onerror=null; this.src='${pageContext.request.contextPath}/resources/img/default.jpg';" />
     </div>
